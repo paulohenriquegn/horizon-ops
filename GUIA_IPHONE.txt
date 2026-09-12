@@ -1,0 +1,120 @@
+◆ HORIZON OPS — Guia para abrir no iPhone
+Hospedagem grátis no Railway.app
+═══════════════════════════════════════════════
+
+O QUE VAI ACONTECER
+────────────────────
+Você vai colocar o sistema na internet de graça.
+Depois abre no iPhone pelo Safari ou Chrome,
+sem precisar do PC ligado.
+
+TEMPO: uns 10 minutinhos na primeira vez.
+
+═══════════════════════════════════════════════
+PASSO 1 — Criar conta no GitHub (gratuito)
+═══════════════════════════════════════════════
+
+1. Abra o navegador e acesse: https://github.com
+2. Clique em "Sign up"
+3. Crie uma conta gratuita com seu email
+4. Confirme o email que chegar
+
+═══════════════════════════════════════════════
+PASSO 2 — Criar o repositório no GitHub
+═══════════════════════════════════════════════
+
+1. Após entrar no GitHub, clique no "+" no canto superior direito
+2. Clique em "New repository"
+3. Nome: horizon-ops
+4. Deixe como "Public"
+5. Clique em "Create repository"
+
+═══════════════════════════════════════════════
+PASSO 3 — Enviar os arquivos para o GitHub
+═══════════════════════════════════════════════
+
+Na página do repositório criado, clique em
+"uploading an existing file"
+
+Arraste TODOS os arquivos desta pasta
+(server.js, package.json, railway.toml, .gitignore
+e a pasta public inteira) para a área de upload.
+
+Clique em "Commit changes"
+
+═══════════════════════════════════════════════
+PASSO 4 — Criar conta no Railway (gratuito)
+═══════════════════════════════════════════════
+
+1. Acesse: https://railway.app
+2. Clique em "Login"
+3. Escolha "Login with GitHub"
+4. Autorize o Railway a acessar sua conta GitHub
+
+═══════════════════════════════════════════════
+PASSO 5 — Criar o projeto no Railway
+═══════════════════════════════════════════════
+
+1. No Railway, clique em "New Project"
+2. Escolha "Deploy from GitHub repo"
+3. Selecione o repositório "horizon-ops"
+4. Clique em "Deploy Now"
+
+O Railway vai instalar tudo automaticamente!
+Aguarde 2-3 minutos.
+
+═══════════════════════════════════════════════
+PASSO 6 — Adicionar volume de dados
+═══════════════════════════════════════════════
+
+IMPORTANTE: sem este passo seus dados somem
+quando o sistema reiniciar!
+
+1. No painel do Railway, clique no seu projeto
+2. Clique em "Add Service" → "Volume"
+3. Em "Mount Path" coloque: /app/data
+4. Clique em "Add"
+5. Vá em "Variables" e adicione:
+   Nome: DATA_DIR
+   Valor: /app/data
+
+═══════════════════════════════════════════════
+PASSO 7 — Pegar o link do sistema
+═══════════════════════════════════════════════
+
+1. No painel do Railway, clique no seu serviço
+2. Clique em "Settings"
+3. Em "Networking" → clique em "Generate Domain"
+4. Vai aparecer um link tipo:
+   horizon-ops-production.up.railway.app
+
+ESTE É O SEU LINK! Guarde ele.
+
+═══════════════════════════════════════════════
+PASSO 8 — Abrir no iPhone
+═══════════════════════════════════════════════
+
+1. Abra o Safari no iPhone
+2. Digite o link que pegou no passo 7
+3. O sistema vai abrir!
+
+Para salvar como app na tela inicial:
+1. Toque no ícone de compartilhar (quadrado com seta)
+2. Role para baixo e toque "Adicionar à Tela de Início"
+3. Toque "Adicionar"
+
+Agora o Horizon Ops aparece como um app
+na tela inicial do seu iPhone! 📱
+
+═══════════════════════════════════════════════
+PLANO GRATUITO DO RAILWAY
+═══════════════════════════════════════════════
+
+O Railway oferece $5 de crédito grátis por mês.
+Para um sistema pequeno como o Horizon Ops,
+isso é mais que suficiente — fica de graça
+o mês inteiro.
+
+═══════════════════════════════════════════════
+PROBLEMA? Me chama que resolvo!
+═══════════════════════════════════════════════
